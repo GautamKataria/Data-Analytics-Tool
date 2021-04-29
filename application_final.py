@@ -33,7 +33,7 @@ if uploaded_file != None:
     scatter_column.write(data.head())
 
     st.sidebar.title("Choose what do you want to do with your data")
-    option = st.sidebar.selectbox("select EDA or PCA", ('< Click to select >',"EDA", "PCA"))
+    option = st.sidebar.selectbox("select EDA or PCA", ('< Click to select >',"Exploratory Data Analysis", "Principal Component Analysis"))
 
 
     num_cols1 = []
