@@ -50,7 +50,7 @@ if uploaded_file != None:
     non_num_data = pd.concat(non_num_cols1, axis=1)
 
 
-    if (option=="PCA"):
+    if (option=="Principal Component Analysis"):
 
         scatter_column.write("### Any missing values will be filled with (mean-numerical, mode - categorical)")
         colorway = st.sidebar.selectbox("Select Different colorways",
@@ -96,7 +96,7 @@ if uploaded_file != None:
         figure234.update_yaxes(title_text='Cumulative explained variance')
         scatter_column.plotly_chart(figure234)
 
-    elif(option == "EDA"):
+    elif(option == "Exploratory Data Analysis"):
         scatter_column.write(" ## Data info")
         scatter_column.write(" #### null data")
         scatter_column.write(data.isnull().sum())
