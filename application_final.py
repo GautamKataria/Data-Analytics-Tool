@@ -28,7 +28,7 @@ if uploaded_file != None:
 
     except Exception as e:
         scatter_column.write("only upload a csv file")
-
+    data = data.dropna(axis = 1, how = 'all')
     scatter_column.write("Dataset")
     scatter_column.write(data.head())
 
